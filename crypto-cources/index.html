@@ -14,32 +14,46 @@
 </head>
 
 <body>
-
+    <div class="burger-nav" style="display: none;">
+        <ul class="burger-list">
+            <li class="burger-item"><a class="burger-item_link" href="#program">Программа</a></li>
+            <li class="burger-item"><a class="burger-item_link" href="#where">Где и когда</a></li>
+            <li class="burger-item"><a class="burger-item_link" href="#who">Кто ведет</a></li>
+            <li class="burger-item"><a class="burger-item_link" href="#advance">Преимущества</a></li>
+            <li class="burger-item"><a class="burger-item_link" href="#price">Стоимость</a></li>
+            <!-- <li class="burger-item"><a class="burger-item_link" href="">Отзывы</a></li> -->
+            <li class="burger-item"><a class="burger-item_link" href="#registration">Регистрация</a></li>
+        </ul>
+    </div>
     <header class="header">
-        <div class="top">
+        <div class="top" id="menu">
             <div class="top-logo">
-                <!-- <img src="./img/" alt=""> -->
                 <img src="./img/jfk_logo.svg" class="logo" alt="logo">
             </div>
             <nav class="top-nav">
+                <img src="./img/menu.svg" alt="" class="burger-menu">
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="#" class="menu-link"> Курсы и треннинги</a>
+                        <a href="#program" class="menu-link"> Программа</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link"> О нас</a>
+                        <a href="#where" class="menu-link"> Где и когда</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link"> Блог</a>
+                        <a href="#who" class="menu-link"> Кто ведет</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link"> Книги</a>
+                        <a href="#advance" class="menu-link"> Преимущества</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link"> Медиа</a>
+                        <a href="#price" class="menu-link"> Стоимость</a>
                     </li>
+                    
+                    <!-- <li class="menu-item">
+                        <a href="#" class="menu-link"> Отзывы</a>
+                    </li> -->
                     <li class="menu-item">
-                        <a href="#" class="menu-link"> Контакты</a>
+                        <a href="#registration" class="menu-link"> Регистрация</a>
                     </li>
                 </ul>
             </nav>
@@ -62,26 +76,11 @@
                 </span>
             </div>
         </div>
-        <div class="bottom">
-            <nav class="bottom-nav">
-                <ul class="bottom-menu">
-                    <li class="bottom-menu_item"><a href="#"> Программа</a></li>
-                    <li class="bottom-menu_item"><a href="#"> Где и когда</a></li>
-                    <li class="bottom-menu_item"><a href="#"> Кто ведет</a></li>
-                    <li class="bottom-menu_item"><a href="#"> Стоимость</a></li>
-                    <li class="bottom-menu_item"><a href="#"> Опыт</a></li>
-                    <li class="bottom-menu_item"><a href="#"> Преимущества</a></li>
-                    <li class="bottom-menu_item"><a href="#"> Клиенты</a></li>
-                    <li class="bottom-menu_item"><a href="#"> Отзывы</a></li>
-                    <li class="bottom-menu_item"><a href="#"> Регистрация</a></li>
-                </ul>
-            </nav>
-        </div>
         <div style="position: absolute; height: inherit; width: inherit; background: rgba(0,0,0,0.5);"></div>
     </header>
 
-    <main>
-        <section class="skill-block">
+    <main style="position: relative;">
+        <section class="skill-block relative" >
             <h2 class="section-title">Что вы получаете?</h2>
             <div class="skill-icons">
                 <div class="icon-block">
@@ -104,8 +103,8 @@
                 </div>
             </div>
         </section>
-        <section class="programm-block section">
-            <h2 class="section-title">Программа</h2>
+        <section  class="programm-block section">
+            <h2 id="program" class="section-title">Программа</h2>
             <div class="programm-item">
                 <div class="week-img">
                     <img src="./img/1w.jpg" alt="orator">
@@ -121,7 +120,7 @@
                         <li class="lesson-item">&#8212 Базовая финансовая грамотность и определение ценности денег,
                             золота</li>
                         <li class="lesson-item">&#8212 Классификация типов криптовалют и их предназначение
-                            (Stablecoin/Token/Coin/NFT/DeFi)</li>
+                            (Stablecoin / Token / Coin / NFT / DeFi)</li>
                         <li class="lesson-item">&#8212 Определение майнинга и его влияние на цену</li>
                     </ul>
                 </div>
@@ -191,7 +190,7 @@
             </div>
         </section>
         <section class="when-where_block section">
-            <h2 class="section-title">Где и когда?</h2>
+            <h2 id="where" class="section-title">Где и когда?</h2>
             <div class="when-where">
                 <div class="dwhen-block">
                     <div class="dwhen-title">Старт</div>
@@ -231,24 +230,24 @@
             </div>
         </section>
         <section class="when-where_block section">
-            <h2 class="section-title">Кто ведет?</h2>
+            <h2 id="who" class="section-title">Кто ведет?</h2>
             <div class="who-block">
                 <div class="who-block_text">
                     <ul class="who-block_list">
                         <li>
-                            ⁃ Проверенный официальный представитель по P2P обменам от Binance
+                            Проверенный официальный представитель по P2P обменам от Binance
                         </li>
                         <li>
-                            ⁃ Создатель и управляющий собственного обменника криптовалют в Киеве
+                            Создатель и управляющий собственного обменника криптовалют в Киеве
                         </li>
                         <li>
-                            ⁃ Более 3 лет практики заработка на различных криптовалютных схемах, помимо трейдинга
+                            Более 3 лет практики заработка на различных криптовалютных схемах, помимо трейдинга
                         </li>
                         <li>
-                            ⁃ Ведущий бизнес аналитик и аналитик информационных систем в ИТ, с опытом в 3 года
+                            Ведущий бизнес аналитик и аналитик информационных систем в ИТ, с опытом в 3 года
                         </li>
                         <li>
-                            ⁃ Средний прирост депозита на дистанции в год 18,72%/ месяц
+                            Средний прирост депозита на дистанции в год 18,72%/ месяц
                         </li>
                     </ul>
                 </div>
@@ -259,7 +258,7 @@
             <!-- </div> -->
         </section>
         <section class="advantages-block">
-            <h2 class="section-title">Преимущества, что вы получите:</h2>
+            <h2 id="advance" class="section-title">Преимущества, что вы получите:</h2>
             <div class="advantages-icons">
                 <div class="advantages-icon-block">
                     <div class="advatage-num">1</div>
@@ -722,17 +721,10 @@
                         <p>Научитесь находить и анализировать недооцененные проекты</p>
                     </div>
                 </div>
-                <!-- <div class="advantages-icon-block">
-                    <div class="advatage-num">10</div>
-
-                    <div class="descript-skill">
-                        <p>Поймете как повлиял локдаун на современную экономику и каким будет дальнейший вектор её развития</p>
-                    </div>
-                </div> -->
             </div>
         </section>
         <section class="when-where_block section">
-            <h2 class="section-title">Стоимость полного курса обучения</h2>
+            <h2 id="price" class="section-title">Стоимость полного курса обучения</h2>
             <p class="align-center">
                 1 месяц занятий — 8 практических тренингов по два часа (16 часов)
                 Группа 12–14 человек
@@ -769,7 +761,7 @@
 
             </div>
         </section>
-        <section class="section">
+        <section id="registration" class="section">
             <div class="relative">
                 <img class="registration-background" src="./img/reg_bg_0_0.svg" alt="background">
                 <button class="registration-btn">
@@ -790,7 +782,7 @@
             </div>
 
         </section>
-        <section class="section">
+        <!-- <section class="section">
             <h2 class="section-title">Отзывы</h2>
             <div class="reviews">
                 <div class="review">
@@ -813,7 +805,7 @@
                     rev2
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer class="site-footer">
         <div class="footer-container">

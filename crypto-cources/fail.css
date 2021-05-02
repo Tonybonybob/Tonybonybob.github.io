@@ -32,13 +32,29 @@ body {
 .title {
     padding: 0.5em 0 0.5em;
     background: url(./img/line-fail.svg) center bottom no-repeat;
+    text-align: center;
 }
 .message {
     font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
 }
 .back-link {
     font-size: 14px;
     text-decoration:none;
     border-bottom: 1px dotted #ff6347;
     color: #ff6347;
+}
+@media(max-width:465px){
+    .title{
+        font-size: 1.5em;
+    }
+    .message{
+        font-size: 14px;
+    }
+}
+@media(max-width:340px){
+    .back-link {
+        font-size: 12px;
+    }
 }
